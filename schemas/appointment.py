@@ -5,7 +5,7 @@ from doctor import Doctors
 from patient import Patient
 
 
-class Appointment(BaseModel):
+class Appointments(BaseModel):
     id: int
     patient: Patient
     doctor: Doctors
