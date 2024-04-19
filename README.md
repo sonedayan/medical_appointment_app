@@ -1,4 +1,6 @@
 # Medical_Appointment_App
 An application to facilitate appointment bookings between doctors and patients.
-# Entities Present
-- 1
+## Entities Present
+- Doctors
+- Patients
+- Appointments
