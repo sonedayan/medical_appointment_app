@@ -17,41 +17,23 @@ class Patients(BaseModel):
     height: float
     phone: str
 
-# class PatientsCreate(BaseModel):
-#     name: str
-#     age: int
-#     gender: Gender
-#     weight: int
-#     height: float
-#     phone: str
+class PatientsCreateAndEdit(BaseModel):
+    name: str
+    age: int
+    gender: Gender
+    weight: int
+    height: float
+    phone: str
 
 
 patients: dict[int, Patients] = {
     0: Patients(
-        id=0,
-        name="Mah Ange Carine",
-        age=25,
-        gender=Gender.female,
-        weight=70,
-        height=1.75,
-        phone="0700000000",
+        id=0, name="Mah Ange Carine", age=20, gender="Female", weight=70, height=1.7, phone="237625464852"
     ),
     1: Patients(
-        id=1,
-        name="Dayan Sone",
-        age=25,
-        gender=Gender.male,
-        weight=70,
-        height=1.75,
-        phone="0700000000",
+        id=1, name="Mewoulou Loic Le Roy", age=22, gender="Male", weight=65, height=1.5, phone="237674895623"
     ),
-    2:Patients(
-        id=2,
-        name="Mewoulou Le Roy Loic",
-        age=25,
-        gender=Gender.male,
-        weight=70,
-        height=1.75,
-        phone="0700000000",
-    )
+    2: Patients(
+        id=2, name="Nadine Hadjeu", age=28, gender="Female", weight=54, height=1.2, phone="237656234587"
+    ),
 }

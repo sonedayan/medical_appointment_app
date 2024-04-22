@@ -2,11 +2,11 @@ from pydantic import BaseModel
 from datetime import date
 
 from doctor import Doctors
-from patient import Patient
+from patient import Patients
 
 
 class Appointments(BaseModel):
     id: int
-    patient: Patient
+    patient: Patients
     doctor: Doctors
     date: date
