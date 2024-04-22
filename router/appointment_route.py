@@ -11,7 +11,7 @@ def get_appointments():
     return data
 
 
-@appointment_router.post('/', status_code=status.HTTP_201_CREATED)
-def create_appointment(appointment_data: Appointments):
-    data = AppointmentService.create_appointment(appointment_data)
-    return {"message": "Appointment created successfully", "data": data}
+# @appointment_router.post('/', status_code=status.HTTP_201_CREATED)
+# def create_appointment(appointment_data: Appointments):
+#     data = AppointmentService.create_appointment(appointment_data)
+#     return {"message": "Appointment created successfully", "data": data}
